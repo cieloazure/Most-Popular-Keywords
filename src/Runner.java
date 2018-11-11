@@ -4,8 +4,6 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import static java.lang.Math.min;
-
 public class Runner {
     public static void main(String args[]) {
         try {
@@ -63,7 +61,7 @@ public class Runner {
                             }
                             fr.printf("\n");
                             for (int i = 0; i < maxNodes.length; i++) {
-                                if(maxNodes[i] != null) {
+                                if (maxNodes[i] != null) {
                                     h.insert(maxNodes[i]);
                                 }
                             }

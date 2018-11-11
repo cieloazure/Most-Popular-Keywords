@@ -105,14 +105,14 @@ class HeapTest {
         h.increaseKey(n5, 2);
         assertTrue(n2.mark);
 
-        int[] expectedValues = new int[] {50, 12, 7, 8};
+        int[] expectedValues = new int[]{50, 12, 7, 8};
 
         int[] actualValues = new int[4];
         actualValues[0] = h.max.frequency;
         HeapNode iter = h.max.rightSibling;
 
         int i = 1;
-        while(iter != h.max){
+        while (iter != h.max) {
             actualValues[i++] = iter.frequency;
             iter = iter.rightSibling;
         }
