@@ -4,6 +4,8 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import static java.lang.Math.min;
+
 public class Runner {
     public static void main(String args[]) {
         try {
@@ -47,9 +49,9 @@ public class Runner {
                             }
                             break;
                         case 2:
-                            HeapNode[] maxNodes = new HeapNode[Integer.parseInt(line)];
-                            int numberOfTopKeywords = Integer.parseInt(line);
-                            for (int i = 0; i < numberOfTopKeywords; i++) {
+                            int numberOfTopKeywords = Integer.min(Integer.parseInt(line), h.nodes);
+                            HeapNode[] maxNodes = new HeapNode[numberOfTopKeywords];
+                            for (int i = 0; h.max != null && i < numberOfTopKeywords; i++) {
                                 HeapNode max = h.extractMax();
                                 String key = nodeToKeywordMapping.get(max);
                                 if (i < numberOfTopKeywords - 1) {
@@ -60,8 +62,10 @@ public class Runner {
                                 maxNodes[i] = max;
                             }
                             fr.printf("\n");
-                            for (int i = 0; i < Integer.parseInt(line); i++) {
-                                h.insert(maxNodes[i]);
+                            for (int i = 0; i < maxNodes.length; i++) {
+                                if(maxNodes[i] != null) {
+                                    h.insert(maxNodes[i]);
+                                }
                             }
                             break;
                         case 3:

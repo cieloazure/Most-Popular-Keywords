@@ -89,12 +89,14 @@ public class Heap {
 
     private void cascadingCut(HeapNode node) {
         HeapNode parent = node.parent;
-        if (parent != null) {
+        if(node != null) {
             if (!node.mark) {
                 node.mark = true;
             } else {
-                cut(node, parent);
-                cascadingCut(parent);
+                if(parent != null) {
+                    cut(node, parent);
+                    cascadingCut(parent);
+                }
             }
         }
     }
