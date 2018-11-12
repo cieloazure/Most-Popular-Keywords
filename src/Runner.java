@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Runner {
-    public static void main(String args[]) {
+    public static void run(String args[]) {
         try {
             String inputFile;
             if (args.length >= 1) {
