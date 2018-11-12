@@ -41,7 +41,7 @@ CLASSES = \
 	  HeapNode.java \
 	  Heap.java \
 	  Runner.java \
-	  Main.java
+	  KeywordCounter.java
 
 
 #
@@ -65,7 +65,7 @@ classes: $(CLASSES:.java=.class)
 jar:
 	@echo "Manifest-Version: 1.0" > manifest.txt
 	@echo "Class-Path: ." >> manifest.txt
-	@echo "Main-Class: Main" >> manifest.txt
+	@echo "Main-Class: KeywordCounter" >> manifest.txt
 	@echo " " >> manifest.txt
 	jar -cmf manifest.txt keyword.jar $(classes)
 
