@@ -39,7 +39,7 @@ JC = javac
 
 CLASSES = \
 	  HeapNode.java \
-	  Heap.java \
+	  FibonacciHeap.java \
 	  Runner.java \
 	  KeywordCounter.java
 
