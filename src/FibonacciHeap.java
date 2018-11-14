@@ -3,7 +3,7 @@ import java.util.Queue;
 
 public class FibonacciHeap {
 
-    public static final int MAX_DEGREE = 25;
+    public static final int MAX_DEGREE = 50;
 
     public HeapNode max; /* Field to point to maximum element in the heap */
     public int nodes; /* Field to keep track of number of nodes in the heap */
@@ -81,8 +81,8 @@ public class FibonacciHeap {
     /**
      * An operation to increase the frequency of the node to a new number. Increasing a frequency of the node may
      * violate the max heap property hence the node is severed from it's parent and inserted in a top level list.
-     * In order to get a better amortized complexity a <code>mark<code/> field is maintained on each node to track its
-     * history. If a node loses one child the <code>mark</code> field is set to <code>true</code> otherwise it stays
+     * In order to get a better amortized complexity a mark<code/> field is maintained on each node to track its
+     * history. If a node loses one child the mark field is set to true otherwise it stays
      * false. If a node loses a second child the node is severed from it's parent as well and a cascading cut will take
      * place in this way.
      *
@@ -130,13 +130,13 @@ public class FibonacciHeap {
     }
 
     /**
-     * A private function which initiates a cascading cut and makes changes in a node's <code>mark</code> if they have
+     * A private function which initiates a cascading cut and makes changes in a node's mark if they have
      * already lost a child. This functions is called on a parent of the node. If the parent has lost it's first child
-     * the mark of the parent will be set to <code>true</code> and no further cascading cut will take place. If the
-     * parent has lost it's second child the node will be <code>cut</code> from the parent and a recursive call to cascading cut
+     * the mark of the parent will be set to true and no further cascading cut will take place. If the
+     * parent has lost it's second child the node will be cut from the parent and a recursive call to cascading cut
      * will be called using the node's parent.
      *
-     * @param node The node, usually the parent of an already <code>cut</code> node
+     * @param node The node, usually the parent of an already cut node
      */
     private void cascadingCut(HeapNode node) {
         HeapNode parent = node.parent;
@@ -181,7 +181,7 @@ public class FibonacciHeap {
 
     /**
      * This method removes the maximum node of the Fibonacci heap and returns that node. When the node is removed, the
-     * children of the node are added to the root level list. The children are then all pairwise combined in <code>consolidate</code>
+     * children of the node are added to the root level list. The children are then all pairwise combined in consolidate
      * method.
      *
      * @return The maximum node removed
@@ -217,8 +217,8 @@ public class FibonacciHeap {
     }
 
     /**
-     * This method is responsible of pairwise combining of nodes based on <code>degree</code> field. It uses a degree table
-     * of <code>MAX_DEGREE</code> size whose upper bound is O(lg n) in the number of nodes expected in the heap.
+     * This method is responsible of pairwise combining of nodes based on degree field. It uses a degree table
+     * of MAX_DEGREE size whose upper bound is O(lg n) in the number of nodes expected in the heap.
      */
     public void consolidate() {
         // Initialize the degree table
@@ -261,8 +261,8 @@ public class FibonacciHeap {
     }
 
     /**
-     * Links a node whose frequency is smaller to a node whose frequency is greater. The <code>small</code> node becomes the
-     * <code>child</code> of the big node.
+     * Links a node whose frequency is smaller to a node whose frequency is greater. The small node becomes the
+     * child of the big node.
      *
      * @param small Lesser frequency node to be made child of big
      * @param big   Higher frequency node to whom small is to be linked

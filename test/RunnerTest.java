@@ -36,8 +36,29 @@ class RunnerTest {
         Runner.run(new String[] {f.toString()});
         File f1 = createTestFile4();
         Runner.run(new String[] {f1.toString()});
-        File f2 = createTestFile4();
+        File f2 = createTestFile5();
         Runner.run(new String[] {f2.toString()});
+    }
+
+    @Test
+    void runWithoutAFile() {
+        Runner.run(new String[] {});
+    }
+
+    @Test
+    void runWithAAbsentFile() {
+        Runner.run(new String[] {"not_present.txt"});
+    }
+
+    @Test
+    void runWithIncorrectExtension() {
+        Runner.run(new String[] {"hello.c"});
+    }
+
+    @Test
+    void runMoreOutputThanInput() {
+        File f = createTestFile6();
+        Runner.run(new String[] {f.toString()});
     }
 
 
@@ -139,6 +160,27 @@ class RunnerTest {
             }
             fr.printf("%d\n",20);
             fr.printf("%s","exit");
+            fr.close();
+            return file;
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private File createTestFile6() {
+        try {
+
+            File file = new File("test_input.txt");
+            PrintWriter fr = new PrintWriter(file);
+            Random generator = new Random();
+
+            for(int i = 0; i < 10; i++){
+                RandomString sgenerator = new RandomString(Math.abs(generator.nextInt(10)) + 10, ThreadLocalRandom.current());
+                fr.printf("$%s %d\n", sgenerator.nextString(), Math.abs(generator.nextInt(1000) + 1));
+            }
+            fr.printf("%d\n",20);
+            fr.printf("%s","stop");
             fr.close();
             return file;
         } catch(IOException e) {

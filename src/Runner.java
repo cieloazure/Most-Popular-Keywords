@@ -22,8 +22,11 @@ public class Runner {
             String inputFile;
             if (args.length >= 1) {
                 inputFile = args[0];
+                if(!inputFile.endsWith(".txt")){
+                    throw new IllegalArgumentException("[ERROR]: Only txt files with extension .txt supported");
+                }
             } else {
-                throw new IllegalArgumentException("[Error]: Input file not provided." + usageString);
+                throw new IllegalArgumentException("[ERROR]: Input file not provided." + usageString);
             }
             try {
 

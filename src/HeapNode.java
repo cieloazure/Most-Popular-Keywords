@@ -9,7 +9,7 @@ public class HeapNode {
 
     /**
      *  Initialize the node with a frequency
-     * @param frequency
+     * @param frequency The frequency of the keyword
      */
     public HeapNode(int frequency) {
         this.frequency = frequency;
