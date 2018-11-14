@@ -30,7 +30,7 @@ public class FibonacciHeap {
         HeapNode newNode = new HeapNode(frequency);
 
         // Insert in root list
-        this.max = insertInList(max, newNode);
+        this.max = insertInList(this.max, newNode);
 
         // If newNode has greater frequency
         if (newNode.frequency > max.frequency) {
@@ -81,7 +81,7 @@ public class FibonacciHeap {
     /**
      * An operation to increase the frequency of the node to a new number. Increasing a frequency of the node may
      * violate the max heap property hence the node is severed from it's parent and inserted in a top level list.
-     * In order to get a better amortized complexity a mark<code/> field is maintained on each node to track its
+     * In order to get a better amortized complexity a mark field is maintained on each node to track its
      * history. If a node loses one child the mark field is set to true otherwise it stays
      * false. If a node loses a second child the node is severed from it's parent as well and a cascading cut will take
      * place in this way.
@@ -228,8 +228,11 @@ public class FibonacciHeap {
         HeapNode iterNode = this.max;
         int nodes = countNodes(this.max);
 
-        while (nodes > 0) {
-            HeapNode x = iterNode;
+        HeapNode[] nodesArr = new HeapNode[nodes];
+        separateNodes(nodesArr, this.max);
+
+        for(int i = 0; i < nodesArr.length; i++) {
+            HeapNode x = nodesArr[i];
             int degree = x.degree;
             // Pairwise combine
             while (degree < MAX_DEGREE && degreeTable[degree] != null) {
@@ -244,8 +247,6 @@ public class FibonacciHeap {
                 degree = degree + 1;
             }
             degreeTable[degree] = x;
-            iterNode = x.rightSibling;
-            nodes--;
         }
 
         // Set root level list
@@ -346,6 +347,16 @@ public class FibonacciHeap {
             while (iter == null && !printStack.isEmpty()) {
                 iter = printStack.remove().child;
             }
+        }
+    }
+
+    private void separateNodes(HeapNode[] arr, HeapNode head) {
+        arr[0] = head;
+        HeapNode iter = head.rightSibling;
+        int i = 1;
+        while(iter != head) {
+            arr[i++] = iter;
+            iter = iter.rightSibling;
         }
     }
 

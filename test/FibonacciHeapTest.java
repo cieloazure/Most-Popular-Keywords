@@ -272,7 +272,7 @@ class FibonacciHeapTest {
         h.printHeap();
     }
 
-    HeapNode insertInList(HeapNode head, HeapNode newNode) {
+    private HeapNode insertInList(HeapNode head, HeapNode newNode) {
         if (head == null) {
             // Create a root list for H containing just the x
             head = newNode;

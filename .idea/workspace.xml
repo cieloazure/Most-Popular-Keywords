@@ -5,14 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MostPopularKeywords1.0/FibonacciHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MostPopularKeywords1.0/FibonacciHeap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MostPopularKeywords1.0/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MostPopularKeywords1.0/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/MostPopularKeywords1.0/RunnerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/MostPopularKeywords1.0/RunnerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output_file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/MostPopularKeywords1.0/FibonacciHeapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/MostPopularKeywords1.0/FibonacciHeapTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_file.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FibonacciHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FibonacciHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeapNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeapNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/RunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeywordCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeywordCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/FibonacciHeapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/FibonacciHeapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_input.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,15 +35,16 @@
     <session id="-1408231906">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -52,17 +52,17 @@
           <entry key="Makefile" value="1" />
           <entry key="class" value="5" />
           <entry key="iml" value="1" />
-          <entry key="java" value="30" />
-          <entry key="makefile" value="2" />
-          <entry key="txt" value="20" />
+          <entry key="java" value="47" />
+          <entry key="makefile" value="4" />
+          <entry key="txt" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="5" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="30" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="JAVA" value="47" />
+          <entry key="PLAIN_TEXT" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -70,16 +70,16 @@
           <entry key="Makefile" value="103" />
           <entry key="dummy" value="11" />
           <entry key="iml" value="2" />
-          <entry key="java" value="38692" />
+          <entry key="java" value="42251" />
           <entry key="makefile" value="66" />
-          <entry key="txt" value="642" />
+          <entry key="txt" value="680" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="38692" />
-          <entry key="PLAIN_TEXT" value="822" />
+          <entry key="JAVA" value="42251" />
+          <entry key="PLAIN_TEXT" value="860" />
         </counts>
       </usages-collector>
     </session>
@@ -92,17 +92,78 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="79" column="42" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
+            <state relative-caret-position="180">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/RandomString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
+                <element signature="e#1367#1368#0" expanded="true" />
+                <element signature="e#1415#1416#0" expanded="true" />
+                <element signature="e#1495#1496#0" expanded="true" />
+                <element signature="e#1519#1520#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/RunnerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KeywordCounter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              <folding>
+                <element signature="e#75#76#0" expanded="true" />
+                <element signature="e#98#99#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/RunnerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/output_file.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-594">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FibonacciHeap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="232" selection-start-line="232" selection-end-line="232" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,47 +174,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Class.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35160">
+            <state relative-caret-position="163">
               <caret line="2433" selection-start-line="2433" selection-end-line="2433" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/zip/ZipFile.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.instrument/sun/instrument/InstrumentationImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11460">
-              <caret line="844" selection-start-line="844" selection-end-line="844" />
+            <state relative-caret-position="141">
+              <caret line="521" selection-start-line="521" selection-end-line="521" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FibonacciHeap.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/loader/URLClassPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="286" selection-start-line="286" selection-end-line="286" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HeapNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/KeywordCounter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="141">
+              <caret line="691" selection-start-line="691" selection-end-line="691" />
             </state>
           </provider>
         </entry>
@@ -168,6 +208,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>code</find>
+      <find>close</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -176,7 +222,6 @@
       <list>
         <option value="$PROJECT_DIR$/input2.txt" />
         <option value="$PROJECT_DIR$/Makefile" />
-        <option value="$PROJECT_DIR$/output_file.txt" />
         <option value="$PROJECT_DIR$/src/HeapTest.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/makefile" />
@@ -184,10 +229,15 @@
         <option value="$PROJECT_DIR$/src/Heap.java" />
         <option value="$PROJECT_DIR$/test/RandomString.java" />
         <option value="$PROJECT_DIR$/input.txt" />
+        <option value="$PROJECT_DIR$/src/HeapNode.java" />
+        <option value="$PROJECT_DIR$/test/FibonacciHeapTest.java" />
+        <option value="$PROJECT_DIR$/src/FibonacciHeap.java" />
+        <option value="$PROJECT_DIR$/test_input.txt" />
+        <option value="$PROJECT_DIR$/output_file.txt" />
+        <option value="$PROJECT_DIR$/src/KeywordCounter.java" />
         <option value="$PROJECT_DIR$/src/Runner.java" />
         <option value="$PROJECT_DIR$/test/RunnerTest.java" />
-        <option value="$PROJECT_DIR$/src/FibonacciHeap.java" />
-        <option value="$PROJECT_DIR$/src/HeapNode.java" />
+        <option value="$PROJECT_DIR$/src/output_file.txt" />
       </list>
     </option>
   </component>
@@ -203,6 +253,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,7 +276,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,8 +286,8 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="mostpopularkeywords1.0" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="fibo&#9;FILE&#9;file:///Users/akashshingte/Projects/MostPopularKeywords1.0/src/FibonacciHeap.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542069423656" />
+    <property name="SearchEverywhereHistoryKey" value="test&#9;FILE&#9;file:///Users/akashshingte/Projects/MostPopularKeywords1.0/test/FibonacciHeapTest.java&#10;fibo&#9;FILE&#9;file:///Users/akashshingte/Projects/MostPopularKeywords1.0/src/FibonacciHeap.java" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542228061519" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -276,19 +326,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in MostPopularKeywords1.0">
-    <configuration name="All in MostPopularKeywords1.0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.KeywordCounter">
+    <configuration name="KeywordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KeywordCounter" />
       <module name="MostPopularKeywords1.0" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PROGRAM_PARAMETERS" value="test_input.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in MostPopularKeywords1.0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MostPopularKeywords1.0" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RunnerTest" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -298,6 +348,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RunnerTest" />
       <option name="METHOD_NAME" value="runMoreOutputThanInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunnerTest.runOnAFileWithDuplicatedRecords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MostPopularKeywords1.0" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RunnerTest" />
+      <option name="METHOD_NAME" value="runOnAFileWithDuplicatedRecords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -313,30 +373,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunnerTest.runOnAIncorrectFormatFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MostPopularKeywords1.0" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RunnerTest" />
-      <option name="METHOD_NAME" value="runOnAIncorrectFormatFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.KeywordCounter" />
       <item itemvalue="JUnit.All in MostPopularKeywords1.0" />
-      <item itemvalue="JUnit.RunnerTest.runOnAIncorrectFormatFile" />
-      <item itemvalue="JUnit.RunnerTest" />
       <item itemvalue="JUnit.RunnerTest.runOnAFileWithOneMillionRecords" />
       <item itemvalue="JUnit.RunnerTest.runMoreOutputThanInput" />
+      <item itemvalue="JUnit.RunnerTest.runOnAFileWithDuplicatedRecords" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KeywordCounter" />
+        <item itemvalue="JUnit.RunnerTest.runOnAFileWithOneMillionRecords" />
+        <item itemvalue="JUnit.RunnerTest.runOnAFileWithDuplicatedRecords" />
         <item itemvalue="JUnit.All in MostPopularKeywords1.0" />
         <item itemvalue="JUnit.RunnerTest.runMoreOutputThanInput" />
-        <item itemvalue="JUnit.RunnerTest.runOnAIncorrectFormatFile" />
-        <item itemvalue="JUnit.RunnerTest.runOnAFileWithOneMillionRecords" />
-        <item itemvalue="JUnit.RunnerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -369,15 +419,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_MostPopularKeywords1_0 - 2018.11.12 at 19h 15m 31s.xml">
-      <configuration name="All in MostPopularKeywords1.0" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunnerTest - 2018.11.12 at 19h 20m 56s.xml">
-      <configuration name="RunnerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunnerTest_runOnAFileWithOneMillionRecords - 2018.11.12 at 19h 23m 06s.xml">
-      <configuration name="RunnerTest.runOnAFileWithOneMillionRecords" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RunnerTest_runOnAFileWithOneMillionRecords - 2018.11.12 at 19h 23m 45s.xml">
       <configuration name="RunnerTest.runOnAFileWithOneMillionRecords" configurationId="JUnit" />
     </history-entry>
@@ -399,6 +440,15 @@
     <history-entry file="All_in_MostPopularKeywords1_0 - 2018.11.12 at 19h 36m 27s.xml">
       <configuration name="All in MostPopularKeywords1.0" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_MostPopularKeywords1_0 - 2018.11.13 at 21h 46m 07s.xml">
+      <configuration name="All in MostPopularKeywords1.0" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunnerTest_runOnAFileWithDuplicatedRecords - 2018.11.14 at 13h 35m 46s.xml">
+      <configuration name="RunnerTest.runOnAFileWithDuplicatedRecords" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunnerTest_runOnAFileWithOneMillionRecords - 2018.11.14 at 13h 36m 12s.xml">
+      <configuration name="RunnerTest.runOnAFileWithOneMillionRecords" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -413,7 +463,7 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22031474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -424,13 +474,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.3299363" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.48280254" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299363" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299363" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3299363" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.5363057" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -488,25 +538,25 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <condition expression="degree &gt; 25" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/FibonacciHeap.java</url>
-          <line>245</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
       <default-breakpoints>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <dependency id="0" />
           <properties />
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="key" language="JAVA" />
+        <watch expression="keywordToNodeMapping.get(&quot;z6E2DVHgMfS&quot;)" language="JAVA" />
+        <watch expression="nodesArr.length" language="JAVA" />
+        <watch expression="countNodes(this.max)" language="JAVA" />
+        <watch expression="nodesArr.length" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -522,6 +572,31 @@
       </expression>
     </expressions>
     <expressions id="watch">
+      <expression>
+        <expression-string>nodesArr.length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>countNodes(this.max)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>keywordToNodeMapping.get(&quot;z6E2DVHgMfS&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>keywordToNodeMapping</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>key</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>iterNode.degree</expression-string>
         <language-id>JAVA</language-id>
@@ -578,32 +653,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.txt" />
-    <entry file="file://$PROJECT_DIR$/test/FibonacciHeapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="146" selection-start-line="146" selection-end-line="146" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/RandomString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1203#1204#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -618,27 +667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35160">
-          <caret line="2433" selection-start-line="2433" selection-end-line="2433" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/zip/ZipFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11460">
+        <state relative-caret-position="193">
           <caret line="844" selection-start-line="844" selection-end-line="844" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FibonacciHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="286" selection-start-line="286" selection-end-line="286" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -649,10 +681,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/KeywordCounter.java">
+    <entry file="file://$PROJECT_DIR$/test/FibonacciHeapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="4050">
+          <caret line="274" column="21" selection-start-line="274" selection-start-column="21" selection-end-line="274" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="498" selection-start-line="498" selection-end-line="498" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="579" selection-start-line="579" selection-end-line="579" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/security/AccessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="662" column="8" selection-start-line="662" selection-start-column="8" selection-end-line="662" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/jar/JarFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="340" selection-start-line="340" selection-end-line="340" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/loader/URLClassPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="691" selection-start-line="691" selection-end-line="691" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="2433" selection-start-line="2433" selection-end-line="2433" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.instrument/sun/instrument/InstrumentationImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="521" selection-start-line="521" selection-end-line="521" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FibonacciHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="232" selection-start-line="232" selection-end-line="232" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RandomString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RunnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_file.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="85" selection-start-column="85" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -662,25 +803,27 @@
           <caret line="1602" column="17" selection-start-line="1602" selection-start-column="17" selection-end-line="1602" selection-end-column="17" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_file.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="79" column="42" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
+        <state relative-caret-position="330">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/RunnerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/KeywordCounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#75#76#0" expanded="true" />
+            <element signature="e#98#99#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/output_file.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
