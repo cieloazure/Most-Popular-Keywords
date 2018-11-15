@@ -6,7 +6,6 @@ import java.io.PrintWriter;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class RunnerTest {
 

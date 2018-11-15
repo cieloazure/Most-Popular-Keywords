@@ -222,41 +222,6 @@ class FibonacciHeapTest {
         assertNull(n);
     }
 
-    @Test
-    void printHeap() {
-        FibonacciHeap h = new FibonacciHeap();
-        h.insert(1);
-        h.insert(2);
-        h.insert(3);
-        h.insert(4);
-        h.insert(5);
-        h.printHeap();
-    }
-
-    @Test
-    void printHeap2() {
-        FibonacciHeap h = new FibonacciHeap();
-        //facebook
-        HeapNode node1 = h.insert(5);
-        // youtube
-        HeapNode node2 = h.insert(3);
-        h.increaseKey(node1, 10);
-        //amazon
-        HeapNode node3 = h.insert(2);
-        //gmail
-        HeapNode node4 = h.insert(4);
-        h.insert(2);
-        h.increaseKey(node1, 6);
-        h.increaseKey(node2, 8);
-        //ebay
-        HeapNode node5 = h.insert(2);
-        h.insert(2);
-        h.increaseKey(node1, 12);
-        h.increaseKey(node2, 11);
-        h.increaseKey(node3, 6);
-        HeapNode max1 = h.extractMax();
-        h.printHeap();
-    }
 
     private HeapNode insertInList(HeapNode head, HeapNode newNode) {
         if (head == null) {
