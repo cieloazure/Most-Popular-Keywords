@@ -43,7 +43,7 @@ public class Runner {
 
                 while (scanner.hasNextLine()) {
                     String line = scanner.nextLine();
-                    int cond = parseLine(line);
+                    int cond = parseLine(line.toLowerCase());
                     switch (cond) {
                         case 1:
                             /*A keyword appears in the file along with its frequency*/
@@ -115,6 +115,7 @@ public class Runner {
             } catch (FileNotFoundException e) {
                 System.err.println("[ERROR]: Input file error! File not found");
             } catch(IOException e) {
+                System.err.println(e.getMessage());
                 System.err.println("[ERROR]: File entries are in incorrect format\n"+fileInputFormat);
             }
         } catch(IllegalArgumentException e) {
@@ -145,7 +146,7 @@ public class Runner {
                 return 2;
             }
         }else {
-            throw new IOException("File format invalid");
+            throw new IOException("File format invalid for "+line);
         }
     }
 
