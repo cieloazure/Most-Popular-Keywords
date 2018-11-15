@@ -41,7 +41,7 @@ CLASSES = \
 	  HeapNode.java \
 	  FibonacciHeap.java \
 	  Runner.java \
-	  KeywordCounter.java
+	  keywordcounter.java
 
 
 #
@@ -65,7 +65,7 @@ classes: $(CLASSES:.java=.class)
 jar:
 	@echo "Manifest-Version: 1.0" > manifest.txt
 	@echo "Class-Path: ." >> manifest.txt
-	@echo "Main-Class: KeywordCounter" >> manifest.txt
+	@echo "Main-Class: keywordcounter" >> manifest.txt
 	@echo " " >> manifest.txt
 	jar -cmf manifest.txt keyword.jar $(classes)
 
@@ -78,4 +78,3 @@ clean:
 	$(RM) *.class
 	$(RM) *.jar
 	$(RM) manifest.txt
-	$(RM) output_file.txt

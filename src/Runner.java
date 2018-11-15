@@ -16,7 +16,7 @@ public class Runner {
      * @param args Should have a valid file in txt format
      */
     public static void run(String args[]) {
-        String usageString = "USAGE: java KeywordCounter [input file]";
+        String usageString = "USAGE: java keywordcounter [input file]";
         String fileInputFormat = "FILE FORMAT: $[keyword] [frequency]\n......\n[number of popular keyword at that instance]\n......\nstop\n";
         try {
             String inputFile;

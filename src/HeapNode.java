@@ -1,4 +1,10 @@
 public class HeapNode {
+    /**
+     *
+     * This class represents a node in a Fibonacci Heap. It includes all the fields responsible to maintain the fibonacci heap
+     * with mark(childCut) fields in order to obtain amortized times for the Fibonacci heap.
+     *
+     */
     public HeapNode parent; /* Pointer to parent node */
     public HeapNode child; /* Pointer to child list, points to just one child in a circular doubly linked list*/
     public HeapNode leftSibling; /* Node to left in the list */

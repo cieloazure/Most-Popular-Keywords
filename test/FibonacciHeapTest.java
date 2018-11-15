@@ -150,20 +150,6 @@ class FibonacciHeapTest {
         });
     }
 
-    @Test
-    void heapLink() {
-        FibonacciHeap h = new FibonacciHeap();
-        HeapNode node1 = h.insert(1);
-        HeapNode node2 = h.insert(2);
-        h.heapLink(node2, node1);
-        assertEquals(node1.child, node2);
-        assertEquals(1, node1.degree);
-        HeapNode node3 = h.insert(3);
-        h.heapLink(node3, node1);
-        assertEquals(2, node1.degree);
-        assertEquals(node2, node1.child);
-        assertEquals(node3, node2.rightSibling);
-    }
 
     @Test
     void extractMax() {

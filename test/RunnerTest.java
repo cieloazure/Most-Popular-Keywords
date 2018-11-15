@@ -61,6 +61,12 @@ class RunnerTest {
         Runner.run(new String[] {f.toString()});
     }
 
+    @Test
+    void runWithOutputEntriesInterspersedWithInput() {
+        File f = createTestFile7();
+        Runner.run(new String[] {f.toString()});
+    }
+
 
     private File createTestFile() {
         try {
@@ -91,7 +97,7 @@ class RunnerTest {
             Random generator = new Random();
 
             for(int i = 0; i < 1000000; i++){
-                RandomString sgenerator = new RandomString(Math.abs(generator.nextInt(20)) + 1, ThreadLocalRandom.current());
+                RandomString sgenerator = new RandomString(Math.abs(generator.nextInt(10)) + 1, ThreadLocalRandom.current());
                 fr.printf("$%s %d\n", sgenerator.nextString(), Math.abs(generator.nextInt(Integer.MAX_VALUE) + 1));
             }
             fr.printf("%d\n",20);
@@ -180,6 +186,35 @@ class RunnerTest {
                 fr.printf("$%s %d\n", sgenerator.nextString(), Math.abs(generator.nextInt(1000) + 1));
             }
             fr.printf("%d\n",20);
+            fr.printf("%s","stop");
+            fr.close();
+            return file;
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private File createTestFile7() {
+        try {
+
+            File file = new File("test_input.txt");
+            PrintWriter fr = new PrintWriter(file);
+            Random generator = new Random();
+
+            String[] toBeRepeated = new String[] {"facebook","amazon","google","apple"};
+
+            for(int i = 0; i < 10000; i++){
+                RandomString sgenerator = new RandomString(Math.abs(generator.nextInt(10)) + 1, ThreadLocalRandom.current());
+                fr.printf("$%s %d\n", sgenerator.nextString(), Math.abs(generator.nextInt(1000) + 1));
+                if(generator.nextBoolean()){
+                    fr.printf("%d\n", generator.nextInt(20) + 1);
+                }
+
+                if(generator.nextBoolean()) {
+                    fr.printf("$%s %d\n", toBeRepeated[generator.nextInt(toBeRepeated.length)], Math.abs(generator.nextInt(1000) + 1));
+                }
+            }
             fr.printf("%s","stop");
             fr.close();
             return file;

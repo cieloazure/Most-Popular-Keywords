@@ -181,8 +181,8 @@ public class FibonacciHeap {
 
     /**
      * This method removes the maximum node of the Fibonacci heap and returns that node. When the node is removed, the
-     * children of the node are added to the root level list. The children are then all pairwise combined in consolidate
-     * method.
+     * children of the node are added to the root level list. The nodes in the top level are then all pairwise combined
+     * in consolidate() method.
      *
      * @return The maximum node removed
      */
@@ -220,17 +220,11 @@ public class FibonacciHeap {
      * This method is responsible of pairwise combining of nodes based on degree field. It uses a degree table
      * of MAX_DEGREE size whose upper bound is O(lg n) in the number of nodes expected in the heap.
      */
-    public void consolidate() {
+    private void consolidate() {
         // Initialize the degree table
         HeapNode[] degreeTable = new HeapNode[MAX_DEGREE];
 
-
-        HeapNode iterNode = this.max;
-        int nodes = countNodes(this.max);
-
-        HeapNode[] nodesArr = new HeapNode[nodes];
-        separateNodes(nodesArr, this.max);
-
+        HeapNode[] nodesArr = separateNodesInList(this.max);
         for(int i = 0; i < nodesArr.length; i++) {
             HeapNode x = nodesArr[i];
             int degree = x.degree;
@@ -264,11 +258,10 @@ public class FibonacciHeap {
     /**
      * Links a node whose frequency is smaller to a node whose frequency is greater. The small node becomes the
      * child of the big node.
-     *
-     * @param small Lesser frequency node to be made child of big
+     *  @param small Lesser frequency node to be made child of big
      * @param big   Higher frequency node to whom small is to be linked
      */
-    public void heapLink(HeapNode small, HeapNode big) {
+    private void heapLink(HeapNode small, HeapNode big) {
         // remove small from root list
         this.max = removeFromList(this.max, small);
 
@@ -313,7 +306,7 @@ public class FibonacciHeap {
      * @param head
      * @return The number of nodes present in the list
      */
-    private int countNodes(HeapNode head) {
+    private int countNodesInList(HeapNode head) {
         int count = 1;
         HeapNode iter = head.rightSibling;
         while (iter != head) {
@@ -331,7 +324,7 @@ public class FibonacciHeap {
         Queue<HeapNode> printStack = new LinkedList<>();
         HeapNode iter = head;
         while (iter != null) {
-            int nodes = countNodes(iter);
+            int nodes = countNodesInList(iter);
             int count = nodes;
             while (nodes > 0) {
                 if (nodes == count) {
@@ -350,7 +343,13 @@ public class FibonacciHeap {
         }
     }
 
-    private void separateNodes(HeapNode[] arr, HeapNode head) {
+    /**
+     * A private function to separate the nodes in circular doubly linked list and put them in an array
+     * @param head Pointer to the circular linked list
+     */
+    private HeapNode[] separateNodesInList(HeapNode head) {
+        int countNodes = countNodesInList(head);
+        HeapNode[] arr = new HeapNode[countNodes];
         arr[0] = head;
         HeapNode iter = head.rightSibling;
         int i = 1;
@@ -358,6 +357,7 @@ public class FibonacciHeap {
             arr[i++] = iter;
             iter = iter.rightSibling;
         }
+        return arr;
     }
 
 }
