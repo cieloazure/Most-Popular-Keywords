@@ -2,7 +2,15 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class FibonacciHeap {
+    /**
+     * Class to maintain the fibonacci heap and related operations
+     */
 
+    /**
+     *
+     * The maximum degree of a node in the heap. The maximum degree depends on the number of nodes in the heap.
+     * The heap can support now 2^MAX_DEGREE number of nodes.
+     */
     public static final int MAX_DEGREE = 50;
 
     public HeapNode max; /* Field to point to maximum element in the heap */
@@ -156,9 +164,9 @@ public class FibonacciHeap {
      * A private function to remove a node from a circular doubly linked list. Returns the newly modified list. If there are no more
      * nodes remaining it will return null.
      *
-     * @param head
-     * @param node
-     * @return
+     * @param head The pointer to the circular doubly linked list
+     * @param node The node to be removed
+     * @return The removed node from the circular doubly linked list
      */
     private HeapNode removeFromList(HeapNode head, HeapNode node) {
         if (node == null || (head.rightSibling == head && head == node)) {
@@ -258,7 +266,7 @@ public class FibonacciHeap {
     /**
      * Links a node whose frequency is smaller to a node whose frequency is greater. The small node becomes the
      * child of the big node.
-     *  @param small Lesser frequency node to be made child of big
+     * @param small Lesser frequency node to be made child of big
      * @param big   Higher frequency node to whom small is to be linked
      */
     private void heapLink(HeapNode small, HeapNode big) {
@@ -317,35 +325,9 @@ public class FibonacciHeap {
     }
 
     /**
-     * Method to print the list to standard output
-     */
-    public void printHeap() {
-        HeapNode head = this.max;
-        Queue<HeapNode> printStack = new LinkedList<>();
-        HeapNode iter = head;
-        while (iter != null) {
-            int nodes = countNodesInList(iter);
-            int count = nodes;
-            while (nodes > 0) {
-                if (nodes == count) {
-                    System.out.printf("%d", iter.frequency);
-                } else {
-                    System.out.printf("->%d", iter.frequency);
-                }
-                iter = iter.rightSibling;
-                printStack.add(iter);
-                nodes--;
-            }
-            iter = printStack.remove().child;
-            while (iter == null && !printStack.isEmpty()) {
-                iter = printStack.remove().child;
-            }
-        }
-    }
-
-    /**
      * A private function to separate the nodes in circular doubly linked list and put them in an array
      * @param head Pointer to the circular linked list
+     * @return The array containing separated nodes
      */
     private HeapNode[] separateNodesInList(HeapNode head) {
         int countNodes = countNodesInList(head);
