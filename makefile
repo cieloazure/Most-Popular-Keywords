@@ -67,7 +67,7 @@ jar:
 	@echo "Class-Path: ." >> manifest.txt
 	@echo "Main-Class: keywordcounter" >> manifest.txt
 	@echo " " >> manifest.txt
-	jar -cmf manifest.txt keyword.jar $(classes)
+	jar -cmf manifest.txt keywordcounter.jar $(classes)
 
 
 #
@@ -78,3 +78,6 @@ clean:
 	$(RM) *.class
 	$(RM) *.jar
 	$(RM) manifest.txt
+
+clean_output:
+	$(RM) output_file.txt

@@ -63,6 +63,7 @@ class RunnerTest {
     @Test
     void runWithOutputEntriesInterspersedWithInput() {
         File f = createTestFile7();
+        f.deleteOnExit();
         Runner.run(new String[] {f.toString()});
     }
 

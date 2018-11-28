@@ -24,9 +24,6 @@ public class Runner {
             /* Check if the input file is present in the command line arguments */
             if (args.length >= 1) {
                 inputFile = args[0];
-                if(!inputFile.endsWith(".txt")){
-                    throw new IllegalArgumentException("[ERROR]: Only txt files with extension .txt supported");
-                }
             } else {
                 throw new IllegalArgumentException("[ERROR]: Input file not provided." + usageString);
             }
@@ -75,7 +72,7 @@ public class Runner {
                         case 2:
                             int numberOfTopKeywords = Integer.min(Integer.parseInt(line.trim()), h.nodes);
                             HeapNode[] maxNodes = new HeapNode[numberOfTopKeywords];
-                            for (int i = 0; h.max != null && i < numberOfTopKeywords; i++) {
+                            for (int i = 0;  i < numberOfTopKeywords; i++) {
 
                                 /* Extract max from the heap */
                                 HeapNode max = h.extractMax();
@@ -85,11 +82,7 @@ public class Runner {
 
                                 /* Write the keyword to the file */
                                 if (i < numberOfTopKeywords - 1) {
-                                    if(h.max == null){
-                                        fr.printf("%s", key);
-                                    } else{
-                                        fr.printf("%s,", key);
-                                    }
+                                    fr.printf("%s,", key);
                                 } else {
                                     fr.printf("%s", key);
                                 }
